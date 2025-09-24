@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday, Love! 🎂</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <h1>🎉 Happy Birthday, My Love! 💖</h1>
+  <p>Click a gift to open your surprise!</p>
+
+  <div class="gift-container">
+    <div class="gift" onclick="openPopup(1)">
+      <img src="ab.png" alt="Gift 1" />
+    </div>
+    <div class="gift" onclick="openPopup(2)">
+      <img src="bc.png.png" alt="Gift 2" />
+    </div>
+    <div class="gift" onclick="openPopup(3)">
+      <img src="cd.png.png" alt="Gift 3" />
+    </div>
+    <!-- Add more gifts as needed -->
+  </div>
+
+  <!-- Popups -->
+  <div class="overlay" onclick="closePopup()"></div>
+
+  <div class="popup" id="popup1">
+    <h2>💌 Love Letter</h2>
+    <p>To the most beautiful soul I know... I’m so lucky to love you and be loved by you. And you are the first girl of my life jissai itna din chala mamla. And ek baat 
+      hamesha yaad rakhio tu ki ek chapran hai aur chapran hi rahegi. jab tak sath hai enjoy krle baad mai roti handegi. You are the first girl jo mujhe itna pyaar krti hai
+      and i wish last bhi tuhi ho. i'm Trying very hard for job but ab jo hoga dekha jayega. I wish mere baad terko jo bhi mile acha hi mile aur teri care kare. You motivate 
+      me so much and ab aage jo hoga uske liye terko bhi aur merko bhi prepare rhena pdega . maine bhot mehnat kari but bhagwan ko jo krna hai vo toh vhi krega so 
+      tu jha bhi rahe khush rahe . Agr kalko meri job lgti hai toh esa gift toh pkka dunga jo lifetime tere sath rahe. Baki I trust you and I love you but pta nhi kaise express 
+      karu tu smj ja bus and tu hamesha yaad rahegi jha bhi rahe khush rhe and khub taraki kare. Aur tu puchti haina ki teri 100 good quality kya hai usmai sabse phele 
+      no pe aata hai tera calmness wala nature tere is shant savbhaw wale nature pe fida hu mai. Aur chid chida pan toh hai nhi teremai just kidding cutu but tu jaisi bhi hai i love you
+      and you are the most beautiful girl ever and tera nature kya chidchide pan wala ho mujhe acha lagta hai and you are just a kid for me jo bhot preshan krti hai aur uss
+      pareshani se mujhe maza bhi aata hai. Baby you are so good girl and you understand me so much and you are wuth me in my cruel time thank you for that and logo ki mt suna kr
+      tu jaisi bhi hai achi hai kam se kam dilki toh saaf hai love you so much kuchi pie❤️. I love you 
+      the most and you are everything for me . Bus itna bhot hai aur smj nhi aara kya likha . May god bless you and jiske bhi sath rahe khush reh love you so much❤️.
+       Happy Birthday Kuchi pie! 🎂💘</p>
+    <button class="close-btn" onclick="closePopup()">Close</button>
+  </div>
+
+  <div class="popup" id="popup2">
+    <h2>🎶 A Song for You</h2>
+    <br>
+    <p>Listen to this song that always reminds me of you ❤️</p>
+    <audio controls>
+  <source src="1.mp3" type="audio/mp3">
+</audio>
+<br>
+ This Song is specially for you</a><br />
+    <button class="close-btn" onclick="closePopup()">Close</button>
+  </div>
+
+  <div class="popup" id="popup3">
+    <h2>📸 Memory Lane</h2>
+    <img src="nikku/1.jpg" alt="Memory Photo" style="width: 60%; border-radius: 10px;" />
+    <button class="close-btn" onclick="closePopup()">Close</button>
+  </div>
+
+<div class="hearts-container"></div>
+
+  <h2 style="color: #e75480;">📸 Our Memories</h2>
+<div class="photo-scroll">
+  <img src="nikku/main.jpg" alt="Memory 1" />
+  <img src="nikku/2.jpg" alt="Memory 2" />
+  <img src="nikku/3.jpg" alt="Memory 3" />
+  <img src="nikku/4.jpg" alt="Memory 1" />
+  <img src="nikku/5.jpg" alt="Memory 2" />
+  <img src="nikku/6.jpg" alt="Memory 3" />
+  <img src="nikku/7.jpg" alt="Memory 1" />
+  <img src="nikku/8.jpg" alt="Memory 2" />
+  <img src="nikku/9.jpg" alt="Memory 3" />
+  <img src="nikku/10.jpg" alt="Memory 1" />
+  <img src="nikku/11.jpg" alt="Memory 2" />
+  <img src="nikku/13.jpg" alt="Memory 3" />
+  <img src="nikku/9.jpg" alt="Memory 1" />
+  <!-- Add more images as needed -->
+</div>
+
+<div class="image-popup-overlay" onclick="closeImagePopup()">
+  <div class="image-popup" onclick="event.stopPropagation()">
+    <img id="popup-image" src="" alt="Full View" />
+    <button class="popup-close" onclick="closeImagePopup()">Close ✖</button>
+  </div>
+</div>
+<div class="love-message">
+  LOVE YOU KUCHI PIE ❤️
+</div>
+  <script src="index.js"></script>
+</body>
+</html>
